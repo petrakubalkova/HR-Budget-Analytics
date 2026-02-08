@@ -24,7 +24,7 @@ Dynamický výpočet budgetu: Model v Power Query (M language) inteligentně po�
  - Source Data: MS Forms, SharePoint (Excel Online).
 
  - Engine: Power Query (M Language) – pokročilé transformace, deduplikace na základě časových razítek a ošetření chybových stavů.
- - 
+   
 ### Ukázka logiky v M-Language (Power Query)
 Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM pomocí vyhledávání klíčových slov v textu, což eliminuje chyby při ručním zadávání dat:
 
@@ -52,5 +52,6 @@ Během vývoje jsem čelila několika technickým výzvám, které dělají mode
  - Časová inteligence: Ošetření výpočtů pro pozice, které zanikají dříve než 31. 12., aby nedocházelo k nadhodnocování forecastu.
 
 ## 📊 Dashboard Preview
-(Bude doplněno).
+
+![Dashboard_PM](images/Dashboard_PM.JPG)
 
