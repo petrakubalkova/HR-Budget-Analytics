@@ -35,6 +35,8 @@ Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM 
     else if [Stav_PM] = "Zrušení plánovaného místa" then "Zrušené" 
     else "Neobsazené")
 
+![Power_Query_Logic](images/Power_query_logic.JPG)
+
  - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI (připravuje se).
 
 
