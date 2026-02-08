@@ -38,7 +38,7 @@ Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM 
 
  ```
  
-![Power_Query_Logic](images/Power_query_logic.JPG)
+![Power_query_logic](images/Power_query_logic.JPG)
 
  - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI (připravuje se).
 
