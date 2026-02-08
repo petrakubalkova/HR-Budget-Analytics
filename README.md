@@ -28,13 +28,16 @@ Dynamický výpočet budgetu: Model v Power Query (M language) inteligentně po�
 ### Ukázka logiky v M-Language (Power Query)
 Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM pomocí vyhledávání klíčových slov v textu, což eliminuje chyby při ručním zadávání dat:
 
-#powerquery
-#"Podmíněný sloupec Typ_PM" = Table.AddColumn(#"Vypočtený Budget", "Typ_PM_sloučené", each 
-    if Text.Contains([Stav_PM], "Otevřené") then "Otevřené" 
-    else if [Stav_PM] = "Obsazení plánovaného místa" then "Obsazené" 
-    else if [Stav_PM] = "Zrušení plánovaného místa" then "Zrušené" 
-    else "Neobsazené")
 
+```powerquery
+#&quot;Podmíněný sloupec Typ_PM&quot; = Table.AddColumn(#&quot;Vypočtený Budget&quot;, &quot;Typ_PM_sloučené&quot;, each 
+    if Text.Contains([Stav_PM], &quot;Otevřené&quot;) then &quot;Otevřené&quot; 
+    else if [Stav_PM] = &quot;Obsazení plánovaného místa&quot; then &quot;Obsazené&quot; 
+    else if [Stav_PM] = &quot;Zrušení plánovaného místa&quot; then &quot;Zrušené&quot; 
+    else &quot;Neobsazené&quot;)
+
+ ```
+ 
 ![Power_Query_Logic](images/Power_query_logic.JPG)
 
  - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI (připravuje se).
@@ -50,6 +53,8 @@ Během vývoje jsem čelila několika technickým výzvám, které dělají mode
  - Hierarchy of Truth: Vytvoření prioritního systému pro výběr mzdy (Upravená mzda > Nástupní mzda > Průměr mzdového rozpětí).
 
  - Časová inteligence: Ošetření výpočtů pro pozice, které zanikají dříve než 31. 12., aby nedocházelo k nadhodnocování forecastu.
+
+![Excel_vystupni_data](images/Excel_vystupni_data.JPG)
 
 ## 📊 Dashboard Preview
 
