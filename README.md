@@ -3,6 +3,10 @@
 Tento projekt představuje komplexní analytické řešení pro správu pracovních míst obsazených i neobsazených včetně nastavení mzdových údajů (Evidence PM) a jejich automatizované porovnávání se skutečným čerpáním personálních nákladů z controllingu. 
 Cílem bylo vytvořit chybějící systém evidence plánovaných míst, nahradit manuální přepisování dat robustním systémem, který eliminuje chyby a poskytuje manažerům okamžitý přehled o budgetu.
 
+
+![Dashboard_Budget](images/Dashboard_Budget.JPG)
+
+
 ## 🌟 Hlavní přínosy řešení
 Automatizace 100% workflow: Data tečou z MS Forms přímo do analytického modelu bez nutnosti lidského zásahu.
 
