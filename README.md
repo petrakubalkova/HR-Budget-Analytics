@@ -20,8 +20,21 @@ Dynamický výpočet budgetu: Model v Power Query (M language) inteligentně po�
  - Source Data: MS Forms, SharePoint (Excel Online).
 
  - Engine: Power Query (M Language) – pokročilé transformace, deduplikace na základě časových razítek a ošetření chybových stavů.
+ - 
+### Ukázka logiky v M-Language (Power Query)
+Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM pomocí vyhledávání klíčových slov v textu, což eliminuje chyby při ručním zadávání dat:
+
+#powerquery
+#"Podmíněný sloupec Typ_PM" = Table.AddColumn(#"Vypočtený Budget", "Typ_PM_sloučené", each 
+    if Text.Contains([Stav_PM], "Otevřené") then "Otevřené" 
+    else if [Stav_PM] = "Obsazení plánovaného místa" then "Obsazené" 
+    else if [Stav_PM] = "Zrušení plánovaného místa" then "Zrušené" 
+    else "Neobsazené")
 
  - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI (připravuje se).
+
+
+
 
 ## 🧩 Co jsem musela vyřešit (The "Analyst's Journey")
 Během vývoje jsem čelila několika technickým výzvám, které dělají model robustním:
