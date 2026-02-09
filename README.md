@@ -12,7 +12,7 @@ Automatizace 100% workflow: Data tečou z MS Forms přímo do analytického mode
 
 Dynamický výpočet budgetu: Model v Power Query (M language) inteligentně počítá mzdové náklady s ohledem na:
 
- - Změny platových tříd v průběhu roku.
+ - Změny mezd, JG a Levels v průběhu roku.
 
  - Alikvotní části budgetu při zrušení nebo novém vzniku pracovního místa.
 
