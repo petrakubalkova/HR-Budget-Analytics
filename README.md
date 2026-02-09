@@ -4,7 +4,7 @@ Tento projekt představuje komplexní analytické řešení pro správu pracovn�
 Cílem bylo vytvořit chybějící systém evidence plánovaných míst, nahradit manuální přepisování dat robustním systémem, který eliminuje chyby a poskytuje manažerům okamžitý přehled o budgetu.
 
 Systém pracuje s modulární architekturou. Je možné využít pouze část na evidenci plánovaných pracovních míst anebo evidenci budgetu na organizační jednotky. 
-Celé řešení je postaveno tak, aby se dalo snadno v budoucnu rozšířit o další parametry, aniž by se došlo k předělávání. Zároveň nevyžaduje náročné vstupní investice do komplexních softwarů. Vše je postaveno v ekosystému Microsoftu. 
+Celé řešení je postaveno tak, aby se dalo snadno v budoucnu rozšířit o další parametry, aniž by došlo k předělávání. Zároveň nevyžaduje náročné vstupní investice do komplexních softwarů. Vše je postaveno v ekosystému Microsoftu. 
 
 
 
