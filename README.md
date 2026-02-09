@@ -3,6 +3,10 @@
 Tento projekt představuje komplexní analytické řešení pro správu pracovních míst obsazených i neobsazených včetně nastavení mzdových údajů (Evidence PM) a jejich automatizované porovnávání se skutečným čerpáním personálních nákladů z controllingu. 
 Cílem bylo vytvořit chybějící systém evidence plánovaných míst, nahradit manuální přepisování dat robustním systémem, který eliminuje chyby a poskytuje manažerům okamžitý přehled o budgetu.
 
+Systém pracuje s modulární architekturou. Je možné využít pouze část na evidenci plánovaných pracovních míst anebo evidenci budgetu na organizační jednotky. 
+Celé řešení je postaveno tak, aby se dalo snadno v budoucnu rozšířit o další parametry, aniž by se došlo k předělávání. Zároveň nevyžaduje náročné vstupní investice do komplexních softwarů. Vše je postaveno v ekosystému Microsoftu. 
+
+
 
 ![Dashboard_Budget](images/Dashboard_Budget.JPG)
 
@@ -37,10 +41,16 @@ Aby byl model robustní, implementovala jsem dynamické seskupování stavů PM 
     else &quot;Neobsazené&quot;)
 
  ```
- 
+
+"Ukázka kódu v editoru Power Query"
+
 ![Power_query_logic](images/Power_query_logic.JPG)
 
- - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI (připravuje se).
+ - Reporting: Excel Dashboard (Pivot Tables, Slicers) & Power BI.
+   
+„Interaktivní Power BI dashboard pro vizualizaci plánování, predikce a čerpání mzdových nákladů.“
+
+![Dashboard_PowerBI_Budget](images/Dashboard_PowerBI_Budget.JPG)
 
 
 
@@ -56,7 +66,22 @@ Během vývoje jsem čelila několika technickým výzvám, které dělají mode
 
 ![Excel_vystupni_data](images/Excel_vystupni_data.JPG)
 
-## 📊 Dashboard Preview
+## 📊 Dashboard Preview pro vizualizaci plánování pracovních míst
 
+"Vizualizace v Excelu"
 ![Dashboard_PM](images/Dashboard_PM.JPG)
+
+"Vizualizace v Power BI"
+![Dashboard_PowerBI_PM](images/Dashboard_PowerBI_PM.JPG)
+
+
+
+## 🔒 Autorská práva a licenční podmínky
+Tento projekt (včetně metodiky výpočtu rozpočtu, logiky v Power Query a vizuálního zpracování) slouží jako ukázka mé odborné práce v rámci profesního portfolia. 
+
+* **Vlastnictví:** Veškerá práva k tomuto řešení jsou vyhrazena autorce (Petra Kubálková).
+* **Užití:** Projekt je určen výhradně k nahlédnutí pro účely prezentace mých dovedností. Jakékoli kopírování, komerční šíření, prodej nebo úprava kódu a metodiky bez předchozího písemného souhlasu autorky není dovoleno.
+* **Kontakt:** V případě zájmu o implementaci podobného řešení ve vaší společnosti mě prosím kontaktujte prostřednictvím zprávy na GitHubu nebo LinkedIn.
+
+
 
